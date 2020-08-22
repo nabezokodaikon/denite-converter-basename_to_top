@@ -20,5 +20,5 @@ class Filter(Base):
                 if str(dir_name) == '.':
                     candidate['abbr'] = base_name
                 else:
-                    candidate['abbr'] = "{} - ./{}".format(base_name, dir_name)
+                    candidate['abbr'] = "{} - [{}]".format(base_name, dir_name)
         return context['candidates']
